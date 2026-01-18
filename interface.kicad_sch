@@ -1427,6 +1427,10 @@
 		)
 	)
 	(no_connect
+		(at 67.31 142.24)
+		(uuid "1c5af7ea-8f9c-49af-ac66-cf755959d9aa")
+	)
+	(no_connect
 		(at 67.31 113.03)
 		(uuid "35ca87ad-38df-49bf-9ae1-056e2739d2fb")
 	)
@@ -1439,6 +1443,14 @@
 		(uuid "90ee452a-ade4-421a-8db0-90cd3e48f080")
 	)
 	(no_connect
+		(at 67.31 134.62)
+		(uuid "bf0538ea-f415-4237-ae7c-ba4ffbe72310")
+	)
+	(no_connect
+		(at 54.61 139.7)
+		(uuid "d245b131-da45-41c0-8c84-f9724db864c3")
+	)
+	(no_connect
 		(at 132.08 39.37)
 		(uuid "d488b2b4-c285-4094-92bc-8fee02936305")
 	)
@@ -1447,12 +1459,20 @@
 		(uuid "da3e9b7e-8272-4277-a21c-2ddaeb1ac884")
 	)
 	(no_connect
+		(at 67.31 139.7)
+		(uuid "dca8b6ea-6f1c-4c8b-905d-50d92ac96156")
+	)
+	(no_connect
 		(at 67.31 118.11)
 		(uuid "dff57e99-c3cb-43e7-a985-d84799c4ed7a")
 	)
 	(no_connect
 		(at 127 39.37)
 		(uuid "e5afbcb9-d1c0-4e87-bfa6-64288c5cf453")
+	)
+	(no_connect
+		(at 67.31 132.08)
+		(uuid "fdcbc161-c7b6-4204-a13b-689d500d3255")
 	)
 	(bus_entry
 		(at 102.87 62.23)
@@ -2414,6 +2434,28 @@
 	)
 	(global_label "~{RESET}"
 		(shape output)
+		(at 67.31 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "09be6f2f-b827-4e04-9279-db8ed701bcc6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 76.0403 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{RESET}"
+		(shape output)
 		(at 111.76 85.09 180)
 		(fields_autoplaced yes)
 		(effects
@@ -2500,6 +2542,28 @@
 			)
 		)
 	)
+	(global_label "TMS2"
+		(shape input)
+		(at 54.61 137.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "34d5dd3b-cd2f-460a-ad28-f58bb3144db6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.7868 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "TMS"
 		(shape input)
 		(at 54.61 115.57 180)
@@ -2513,6 +2577,50 @@
 		(uuid "3dfe6121-34c8-474b-85ff-1f8723b4b3f2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 47.9963 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TDI2"
+		(shape input)
+		(at 54.61 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "53884c26-859d-416e-8d07-f3e1cb739d58")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 48.7824 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TDO2"
+		(shape input)
+		(at 54.61 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6870a5ba-4506-4f2c-a54e-e074582d92d0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 48.0567 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2584,6 +2692,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TCK2"
+		(shape input)
+		(at 54.61 132.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "921c3c1c-a669-4d05-8811-1514ab2189fc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.9077 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2941,6 +3071,98 @@
 			(project "SBC6809System2Video"
 				(path "/78b9551b-1c10-4835-8047-f82ce94e7825/0fadc3d1-9644-458b-8592-35be0cb0a9ca"
 					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x05_Odd_Even")
+		(at 59.69 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "766424cb-a608-496b-862b-1973827b0f71")
+		(property "Reference" "J4"
+			(at 60.96 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "JTAG"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical"
+			(at 59.69 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 59.69 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "43258688-654f-424f-bfdc-2c24473490ca")
+		)
+		(pin "5"
+			(uuid "e94b30fd-69b2-44be-bb1a-29742037c035")
+		)
+		(pin "9"
+			(uuid "12cc3f6a-ac3a-47eb-b1b2-7028072bedc3")
+		)
+		(pin "7"
+			(uuid "be2e0784-a9c6-4e38-8a34-492af7326c05")
+		)
+		(pin "1"
+			(uuid "0339acf9-3ffb-445d-bd47-d3592b8571ea")
+		)
+		(pin "3"
+			(uuid "a98967c9-3bf4-4293-9c14-83f64621bdc7")
+		)
+		(pin "2"
+			(uuid "0f8a349a-93d0-482b-b012-90b9d103e437")
+		)
+		(pin "8"
+			(uuid "cf1f18eb-6bc6-4e93-aaa3-a493ac99c523")
+		)
+		(pin "6"
+			(uuid "2446b2db-b54d-44a9-b4a7-7c9b7965f846")
+		)
+		(pin "10"
+			(uuid "7f17f1fd-432e-41ad-9c08-db0808827f58")
+		)
+		(instances
+			(project "SBC6809System2Video"
+				(path "/78b9551b-1c10-4835-8047-f82ce94e7825/0fadc3d1-9644-458b-8592-35be0cb0a9ca"
+					(reference "J4")
 					(unit 1)
 				)
 			)
