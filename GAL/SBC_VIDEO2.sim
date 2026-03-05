@@ -1,0 +1,39 @@
+%SIGNAL
+PIN   3 =  A2 
+PIN  12 =  BLANK 
+PIN  18 =  CPUnVDU 
+PIN   6 =  DEV3 
+PIN   7 =  DEV4 
+PIN   9 =  DEV6 
+PIN   1 =  E 
+PIN  13 =  MEM_CE 
+PIN  14 =  MEM_OE 
+PIN  15 =  PIA 
+PIN   8 =  RnW 
+PIN  16 =  VDC 
+PIN  17 =  nCRTC 
+PIN   5 =  nFS 
+PIN   4 =  nHS 
+PIN   2 =  nSELPH 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+BLANK =>
+    nFS & nHS
+
+MEM_CE =>
+    DEV3
+
+MEM_OE =>
+    DEV3
+
+PIA =>
+    !A2 & DEV6
+
+VDC =>
+    A2 & DEV6
+
+%END

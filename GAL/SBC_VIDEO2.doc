@@ -1,0 +1,68 @@
+
+*******************************************************************************
+                                  SBC_VIDEO2
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          g16v8s  Library DLIB-h-40-9
+Created         Thu Mar 05 19:36:41 2026
+Name            SBC_VIDEO2 
+Partno          00 
+Revision        01 
+Date            06/02/2026 
+Designer        Julian Brown 
+Company         none 
+Assembly        SBCSystem2Video 
+Location        U6 
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+BLANK =>
+    nFS & nHS
+
+MEM_CE =>
+    DEV3
+
+MEM_OE =>
+    DEV3
+
+PIA =>
+    !A2 & DEV6
+
+VDC =>
+    A2 & DEV6
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    A2                          3        V        -       -       -     
+    BLANK                       12       V        1       8       1     
+    CPUnVDU                     18       V        -       -       -     
+    DEV3                        6        V        -       -       -     
+    DEV4                        7        V        -       -       -     
+    DEV6                        9        V        -       -       -     
+    E                           1        V        -       -       -     
+    MEM_CE                      13       V        1       8       1     
+    MEM_OE                      14       V        1       8       1     
+    PIA                         15       V        1       8       1     
+    RnW                         8        V        -       -       -     
+    VDC                         16       V        1       8       1     
+    nCRTC                       17       V        -       -       -     
+    nFS                         5        V        -       -       -     
+    nHS                         4        V        -       -       -     
+    nSELPH                      2        V        -       -       -     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

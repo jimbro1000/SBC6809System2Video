@@ -1,0 +1,40 @@
+Name     SBC_VIDEO2 ;
+PartNo   00 ;
+Date     06/02/2026 ;
+Revision 01 ;
+Designer Julian Brown ;
+Company  none ;
+Assembly SBCSystem2Video ;
+Location U6 ;
+Device   g16v8 ;
+
+/* *************** INPUT PINS *********************/
+PIN 1   = E                       ; /* Quadrature clock E              */ 
+PIN 2   = nSELPH                  ; /* NAND A5+A6+A7                   */ 
+PIN 3   = A2                      ; /* Address line 2                  */ 
+PIN 4   = nHS                     ; /* Horizontal Sync (active low)    */ 
+PIN 5   = nFS                     ; /* Vertical Sync (active low)      */ 
+PIN 6   = DEV3                    ; /* DEV3 select                     */ 
+PIN 7   = DEV4                    ; /* DEV4 select                     */ 
+PIN 8   = RnW                     ; /* Read/!Write                     */ 
+PIN 9   = DEV6                    ; /* DEV6 select                     */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN 12  = BLANK                   ; /* Video Blank output              */ 
+PIN 13  = MEM_CE                  ; /* Memory Chip Enable              */ 
+PIN 14  = MEM_OE                  ; /* Memory Output Enable            */ 
+PIN 15  = PIA                     ; /* PIA chip enable                 */ 
+PIN 16  = VDC                     ; /* VDC chip enable                 */ 
+PIN 17  = nCRTC                   ; /* Redundant                       */ 
+PIN 18  = CPUnVDU                 ; /* Redundant                       */ 
+
+
+
+/* select VDC and PIA on DEV 6 */
+PIA = DEV6 & !A2;
+VDC = DEV6 & A2;
+
+MEM_CE = DEV3;
+MEM_OE = DEV3;
+
+BLANK = !(nHS & nFS);

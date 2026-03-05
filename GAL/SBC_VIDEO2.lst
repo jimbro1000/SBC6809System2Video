@@ -1,0 +1,53 @@
+LISTING FOR LOGIC DESCRIPTION FILE: SBC_VIDEO2.pld                   Page 1
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# 60008009
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Thu Mar 05 19:36:41 2026
+
+  1:Name     SBC_VIDEO2 ;
+  2:PartNo   00 ;
+  3:Date     06/02/2026 ;
+  4:Revision 01 ;
+  5:Designer Julian Brown ;
+  6:Company  none ;
+  7:Assembly SBCSystem2Video ;
+  8:Location U6 ;
+  9:Device   g16v8 ;
+ 10:
+ 11:/* *************** INPUT PINS *********************/
+ 12:PIN 1   = E                       ; /* Quadrature clock E              */ 
+ 13:PIN 2   = nSELPH                  ; /* NAND A5+A6+A7                   */ 
+ 14:PIN 3   = A2                      ; /* Address line 2                  */ 
+ 15:PIN 4   = nHS                     ; /* Horizontal Sync (active low)    */ 
+ 16:PIN 5   = nFS                     ; /* Vertical Sync (active low)      */ 
+ 17:PIN 6   = DEV3                    ; /* DEV3 select                     */ 
+ 18:PIN 7   = DEV4                    ; /* DEV4 select                     */ 
+ 19:PIN 8   = RnW                     ; /* Read/!Write                     */ 
+ 20:PIN 9   = DEV6                    ; /* DEV6 select                     */ 
+ 21:
+ 22:/* *************** OUTPUT PINS *********************/
+ 23:PIN 12  = BLANK                   ; /* Video Blank output              */ 
+ 24:PIN 13  = MEM_CE                  ; /* Memory Chip Enable              */ 
+ 25:PIN 14  = MEM_OE                  ; /* Memory Output Enable            */ 
+ 26:PIN 15  = PIA                     ; /* PIA chip enable                 */ 
+ 27:PIN 16  = VDC                     ; /* VDC chip enable                 */ 
+ 28:PIN 17  = nCRTC                   ; /* Redundant                       */ 
+ 29:PIN 18  = CPUnVDU                 ; /* Redundant                       */ 
+ 30:
+ 31:
+ 32:
+ 33:/* select VDC and PIA on DEV 6 */
+ 34:PIA = DEV6 & !A2;
+ 35:VDC = DEV6 & A2;
+ 36:
+ 37:MEM_CE = DEV3;
+ 38:MEM_OE = DEV3;
+ 39:
+ 40:BLANK = !(nHS & nFS);
+ 41:
+
+
+
+Jedec Fuse Checksum       (1c1d)
+Jedec Transmit Checksum   (99c3)
